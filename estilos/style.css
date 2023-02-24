@@ -38,15 +38,15 @@ section#login{
     box-shadow: 3px 3px 10px #002b5cdc ;
 }
 
-#loginsection > div#imagem{
-    background:#0054b4 url(../imagens/pexels-malcolm-garret-13425274\ \(1\).jpg) no-repeat;
+section#login > div#imagem{
+    background: #0054b4 url(../imagens/pexels-malcolm-garret-13425274\ \(1\).jpg) no-repeat;
     background-size: cover;
     background-position: 0%;
     height: 200px;
     display: block;
 }
 
-#loginsection > div#formulario{
+section#login > div#formulario{
     padding: 10px;
     display: block;
 }
