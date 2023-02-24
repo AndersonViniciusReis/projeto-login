@@ -7,6 +7,7 @@
     <title>login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -17,9 +18,19 @@
             <div id="formulario">
                 <h1> login</h1>
                 <p>seja bem-vindo(a) novamente. faça login para acessar sua conta e poder fazer a configuração de seu ambiente</p>
-                <form action="login.js" method="post" autocomplete="off">
-                    <label for="iemail">emal:</label>
-                    <input type="email" name="email" id="iemail" required>
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo"> 
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu email" required autocomplete="email" maxlength="30">
+                        <label for="iemail">email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required autocomplete="current-password" minlength="8" maxlength="20">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="enviar"> 
+                    <a href="esqueci.html">esuqeci a senha <span class="material-icons">email</span> </a>
                 </form>
             </div>
         </section>
